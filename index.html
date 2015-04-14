@@ -26,9 +26,9 @@ The goal is to create a 2D fighting game engine and eventually create a game usi
 
 <p>As for the design of the engine, I treated each "state" of the game as its own state and utilized a stack to manage these states (such as MenuState, BattleState, PauseState). This allows for each state to be self contained and can be stacked upon each other without fear of any conflicts happening. (e.g. I can just push PauseState on top of BattleState to pause the game and then pop it off to unpause the game).</p>
 
-<p>The engine also allows for basic graphic options such as different resolutions and fullscreen/windowed modes with borderless variants. THe settings are saved in an ini file upon leaving the menu and are loaded at the game's initial startup.</p>
+<p>The engine also allows for basic graphic options such as different resolutions and fullscreen/windowed modes with borderless variants. The settings are saved in an ini file upon leaving the menu and are loaded at the game's initial startup.</p>
 
-<p>The Controls are contained in a singleton that houses all the necessary data for each player's controls. It is built off of SDL's Keyboard and GameController classes and each state has a reference to the Controls singleton to be able to read user's input. THe controls are customizable and are stored in an ini file that is read at the game's initial startup.</p>
+<p>The Controls are contained in a singleton that houses all the necessary data for each player's controls. It is built off of SDL's Keyboard and GameController classes and each state has a reference to the Controls singleton to be able to read user's input. The controls are customizable and are stored in an ini file that is read at the game's initial startup.</p>
 
 <p>As for Gameplay Systems. I decided to use a form of Entity Component Model and create a base form of common entities (Stage,Fighter,Projectile) and attach components (Input, Collision, Graphics, Physics) that would be needed by each. This methodology allows for neater code that is self contained within its own component.</p>
 
