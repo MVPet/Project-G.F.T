@@ -24,7 +24,7 @@ The goal is to create a 2D fighting game engine and eventually create a game usi
 
 <p>The engine was developed using SDL2.1, Boost, and C++, but both game and engine are in the very early stages (as seen below).</p>
 
-<p>As for the design of the engine, I treated each "state" of the game as its own state and utilized a stack to manage these states. This allows for each state to be self contained and can be stacked upon each other without fear of any conflicts happening. (e.g. I can just push PauseState on top of BattleState to pause the game and then pop it off to unpause the game).</p>
+<p>As for the design of the engine, I treated each "state" of the game as its own state and utilized a stack to manage these states (such as MenuState, BattleState, PauseState). This allows for each state to be self contained and can be stacked upon each other without fear of any conflicts happening. (e.g. I can just push PauseState on top of BattleState to pause the game and then pop it off to unpause the game).</p>
 
 <p>The engine also allows for basic graphic options such as different resolutions and fullscreen/windowed modes with borderless variants. THe settings are saved in an ini file upon leaving the menu and are loaded at the game's initial startup.</p>
 
