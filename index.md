@@ -1,0 +1,38 @@
+This is a personal project I have worked on in my spare time for the past two weeks.
+The goal is to create a 2D fighting game engine and eventually create a game using said engine.
+
+###The Engine:
+The engine was developed using SDL2.1, Boost, and C++, but both game and engine are in the very early stages (as seen below).
+
+As for the design of the engine, I treated each "state" of the game as its own state and utilized a stack to manage these states. This allows for each state to be self contained and can be stacked upon each other without fear of any conflicts happening. (e.g. I can just push PauseState on top of BattleState to pause the game and then pop it off to unpause the game).
+
+The Controls are contained in a singleton that houses all the necessary data for each player's controls. It is built off of SDL's Keyboard and GameController classes and each state has a reference to the Controls singleton to be able to read user's input.
+
+As for Gameplay Systems. I decided to use a form of Entity Component Model and create a base form of common entities (Stage,Fighter,Projectile) and attach components (Input, Collision, Graphics, Physics) that would be needed by each. This methodology allows for neater code that is self contained within its own component.
+
+The Stage is a tileset that is loaded through an XML with a graphics layer and a collision layer. I went with this approach as it allows for easy creation and editing of stages. In the final version the stages will be hard coded to prevent any alteration of data, but the XML loading will still remain for User Created Content.
+
+The Characters are all based off of one class, Fighter, and it's necessary components. However, each fighter has their own header file that houses all the data about their attributes and attacks.
+
+The source code is not yet ready to be placed on GitHub yet. However, if you would like a sample of a part of the code, feel free to ask.
+
+Current Engine Features:
+- Custom resolution settings, fullscreen/windowed (both with borderless options)
+- Stages are loaded through XMLs to allow for simple and fast stage creation/editing.
+- Controller and Fight Stick support.
+
+Upcoming Features/Revisions:
+- Rework of the Controls class to be more efficient with SDL's handling of real time input.
+- Camera class tweaks to remove the "shaking" effect on the edges of the screen.
+- Balance and adjustments to the characters and the physics.
+- Input Queuing
+- Removing all placeholders (Graphics, Fonts, Music, etc.)
+
+###The Prototype Game:
+The prototype game is Super Smash Bros like and features two placeholder characters on a placeholder stage fighting it out. Each character has 4 Light Attacks, 3 Heavy Attacks and 4 Special attacks that can be done using a combination of a direction + an attack button. It is in no way indicative of what the end result will look like.
+
+I am also considering creating a second prototype that is more in line with traditional fighting games such as Street Fighter and Mortal Kombat to decide where to go with Project G.F.T.
+
+Everything in the prototype is all placeholder and I own none of the placeholders used (Music, Graphics, Fonts). They are all owned by their respective copyright holders.
+
+Watch a video of the current prototype here:
