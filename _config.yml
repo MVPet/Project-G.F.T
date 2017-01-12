@@ -1,7 +1,7 @@
-title: Project G.F.T and vENGINE
+title: Project G.F.T
 description: A Prototype of Both Engine & Game
 google_analytics: 
-show_downloads: true
+show_downloads: false
 theme: jekyll-theme-midnight
 
 gems:
