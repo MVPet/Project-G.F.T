@@ -46,4 +46,4 @@
 <p>Watch a video of the current prototype here:</p>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/G5OdLZ-3JeM" frameborder="0" allowfullscreen></iframe>
 
-<p><a href="http://mvpet.github.io/">Back to Main Page</a></p>
+<br/><p><a href="http://mvpet.github.io/">Back to Main Page</a></p>
