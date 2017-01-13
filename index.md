@@ -37,4 +37,4 @@
 <p align="center"><iframe width="560" height="315" src="https://www.youtube.com/embed/G5OdLZ-3JeM" frameborder="0" allowfullscreen></iframe></p>
 
 <br>
-<p align="ceter"><a href="http://mvpet.github.io/">Back to Main Page</a></p>
+<p align="center"><a href="http://mvpet.github.io/">Back to Main Page</a></p>
