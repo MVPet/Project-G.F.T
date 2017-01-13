@@ -1,6 +1,6 @@
 <p>The framework was developed using SDL2.1, Boost, and C++, but both demo and framework are in the very early prototype stages (as seen below).</p>
 
-<p>As for the design of the engine, I treated each "state" of the game as its own state and utilized a stack to manage these states (such as MenuState, BattleState, PauseState). This allows for each state to be self contained and can be stacked upon each other without fear of any conflicts happening. (e.g. I can just push PauseState on top of BattleState to pause the game and then pop it off to unpause the game).</p>
+<p>As for the design of the framework, I treated each "state" of the game as its own state and utilized a stack to manage these states (such as MenuState, BattleState, PauseState). This allows for each state to be self contained and can be stacked upon each other without fear of any conflicts happening. (e.g. I can just push PauseState on top of BattleState to pause the game and then pop it off to unpause the game).</p>
 
 <p>The framework also allows for basic graphic options such as different resolutions and fullscreen/windowed modes with borderless variants. The settings are saved in an ini file upon leaving the menu and are loaded at the game's initial startup.</p>
 
@@ -12,7 +12,7 @@
 
 <p>The Characters are all based off of one class, Fighter, and it's necessary components. However, each fighter has their own header file that houses all the data about their attributes and attacks.</p>
 
-<p>Current Engine Features:</p>
+<p>Current Framework Features:</p>
 
 <ul>
 <li>Customizable resolution settings, fullscreen/windowed (both with borderless options)</li>
@@ -21,7 +21,7 @@
 <li>Controller and Fight Stick support.</li>
 </ul>
 
-<p>Although I call it a 2D Platform Fighter engine, with some minor tweaking the engine could be used to create almost any kind of 2D game.</p>
+<p>Although I call it a 2D Platform Fighter framework, with some minor tweaking the framework could be used to create almost any kind of 2D game.</p>
 
 <h3><p align="center">The Prototype Demo</p></h3>
 
