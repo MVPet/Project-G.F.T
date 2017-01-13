@@ -1,3 +1,7 @@
+<p>This is a prototype I made to practive developing the framework and gameplay of 2D Platform Fighters like Nintendo's Super Smash Bros. series.</p>
+
+<h3><p align="center">Framework Design</p></h3>
+
 <p>The framework was developed using SDL2.1, Boost, and C++, but both demo and framework are in the very early prototype stages (as seen below).</p>
 
 <p>As for the design of the framework, I treated each "state" of the game as its own state and utilized a stack to manage these states (such as MenuState, BattleState, PauseState). This allows for each state to be self contained and can be stacked upon each other without fear of any conflicts happening. (e.g. I can just push PauseState on top of BattleState to pause the game and then pop it off to unpause the game).</p>
@@ -23,7 +27,7 @@
 
 <p>Although I call it a 2D Platform Fighter framework, with some minor tweaking the framework could be used to create almost any kind of 2D game.</p>
 
-<h3><p align="center">The Prototype Demo</p></h3>
+<h3><p align="center">The Prototype</p></h3>
 
 <p>The prototype game is Super Smash Bros like and features two placeholder characters on a placeholder stage fighting it out. Each character has 4 Light Attacks, 3 Heavy Attacks, 4 jumping attacks, and 4 Special attacks that can be done using a combination of a direction + an attack button. It is in no way indicative of what the end result will look like.</p>
 
