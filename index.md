@@ -1,12 +1,8 @@
-<p>This is a personal project I have previously worked on in my spare time. The engine is a prototype 2D Platform Fighter engine that I hope to one day use to develop a game.</p>
-
-<h3><p align="center">The Engine:</p></h3>
-
-<p>The engine was developed using SDL2.1, Boost, and C++, but both game and engine are in the very early prototype stages (as seen below).</p>
+<p>The framework was developed using SDL2.1, Boost, and C++, but both demo and framework are in the very early prototype stages (as seen below).</p>
 
 <p>As for the design of the engine, I treated each "state" of the game as its own state and utilized a stack to manage these states (such as MenuState, BattleState, PauseState). This allows for each state to be self contained and can be stacked upon each other without fear of any conflicts happening. (e.g. I can just push PauseState on top of BattleState to pause the game and then pop it off to unpause the game).</p>
 
-<p>The engine also allows for basic graphic options such as different resolutions and fullscreen/windowed modes with borderless variants. The settings are saved in an ini file upon leaving the menu and are loaded at the game's initial startup.</p>
+<p>The framework also allows for basic graphic options such as different resolutions and fullscreen/windowed modes with borderless variants. The settings are saved in an ini file upon leaving the menu and are loaded at the game's initial startup.</p>
 
 <p>The Controls are contained in a singleton that houses all the necessary data for each player's controls. It is built off of SDL's Keyboard and GameController classes and each state has a reference to the Controls singleton to be able to read user's input. The controls are customizable and are stored in an ini file that is read at the game's initial startup.</p>
 
@@ -25,26 +21,16 @@
 <li>Controller and Fight Stick support.</li>
 </ul>
 
-<p>Upcoming Features/Revisions:</p>
-
-<ul>
-<li>Rework of the Controls class to be more efficient with SDL's handling of real time input.</li>
-<li>Camera class tweaks to remove the "shaking" effect on the edges of the screen.</li>
-<li>Balance and adjustments to the characters and the physics.</li>
-<li>Input Queuing</li>
-<li>Removing all placeholders (Graphics, Fonts, Music, etc.)</li>
-</ul>
-
 <p>Although I call it a 2D Platform Fighter engine, with some minor tweaking the engine could be used to create almost any kind of 2D game.</p>
 
-<h3><p align="center">The Prototype Game:</p></h3>
+<h3><p align="center">The Prototype Demo</p></h3>
 
 <p>The prototype game is Super Smash Bros like and features two placeholder characters on a placeholder stage fighting it out. Each character has 4 Light Attacks, 3 Heavy Attacks, 4 jumping attacks, and 4 Special attacks that can be done using a combination of a direction + an attack button. It is in no way indicative of what the end result will look like.</p>
 
 <p>Everything in the prototype is all placeholder and I own none of the placeholders used (Music, Graphics, Fonts). They are all owned by their respective copyright holders.</p>
 
-<p>Watch a video of the current prototype here:</p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/G5OdLZ-3JeM" frameborder="0" allowfullscreen></iframe>
+<h3><p align="center">Video</p></h3>
+<p align="center"><iframe width="560" height="315" src="https://www.youtube.com/embed/G5OdLZ-3JeM" frameborder="0" allowfullscreen></iframe></p>
 
 <br>
 <p><a href="http://mvpet.github.io/">Back to Main Page</a></p>
