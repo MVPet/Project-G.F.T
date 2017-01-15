@@ -1,6 +1,6 @@
 <h4>
 <b><i>Developed With: C++, Boost, and SDL</i></b><br>
-<b><i>Development Time : January 2015 to March 2015</i></b><br>
+<b><i>Development Time: January 2015 to March 2015</i></b><br>
 </h4>
 <br>
 <p>This is a prototype I made to practive developing the framework and gameplay of 2D Platform Fighters like Nintendo's Super Smash Bros. series.</p>
