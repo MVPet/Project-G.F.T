@@ -35,8 +35,8 @@
 
 <p>The prototype game is Super Smash Bros like and features two placeholder characters on a placeholder stage fighting it out. Each character has 4 Light Attacks, 3 Heavy Attacks, 4 jumping attacks, and 4 Special attacks that can be done using a combination of a direction + an attack button..</p>
 
-<p>Everything in the prototype is all placeholder and I own none of the placeholders used.<br>
-All content used (Music, Graphics, Fonts) are owned by their respective copyright holders.</p>
+<p align="center"><i><b>Everything in the prototype is all placeholder and I own none of the placeholders used.<br>
+All content used (Music, Graphics, Fonts) are owned by their respective copyright holders.</b></i></p>
 
 <h3><p align="center">Video</p></h3>
 <p align="center"><iframe width="560" height="315" src="https://www.youtube.com/embed/G5OdLZ-3JeM" frameborder="0" allowfullscreen></iframe></p>
